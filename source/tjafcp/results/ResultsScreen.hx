@@ -93,6 +93,9 @@ class ResultsScreen extends FlxState
 		for (number in numbers)
 		{
 			var ppercentNumber = Std.int(percentNumber);
+			trace(Std.string(ppercentNumber).charAt(3));
+			trace(Std.string(ppercentNumber).charAt(2));
+			trace(Std.string(ppercentNumber).charAt(1));
 			if (ppercentNumber >= 100 && number.ID == 2)
 				number.animation.play(Std.string(ppercentNumber).charAt(3));
 			if (ppercentNumber >= 10 && number.ID == 1)
