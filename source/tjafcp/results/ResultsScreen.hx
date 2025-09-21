@@ -48,7 +48,7 @@ class ResultsScreen extends FlxState
 		for (i in 0...3)
 		{
 			var number = new ResultsFont();
-			number.animation.play('num 0');
+			number.animation.play('0');
 
 			number.screenCenter();
 			number.ID = i;
