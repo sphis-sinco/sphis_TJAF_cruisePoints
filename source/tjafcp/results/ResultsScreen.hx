@@ -3,6 +3,7 @@ package tjafcp.results;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxState;
+import flixel.util.FlxColor;
 import haxe.macro.Compiler;
 import tjafcp.results.ResultsCharacter.ResultsCharacterID;
 
@@ -30,14 +31,14 @@ class ResultsScreen extends FlxState
 	{
 		super.create();
 
-		var bgColor = 0xFFCC99;
+		var bgColor = "0xFFCC99";
 
 		if (Compiler.getDefine('RESULTS_DONT_CHANGE_BGCOLOR') != '1')
 		{
 			if (characterManager.id == TJ)
-				bgColor = 0x99CCFF;
+				bgColor = "0x99CCFF";
 		}
 
-		add(new FlxSprite().makeGraphic(FlxG.width, FlxG.height, bgColor));
+		add(new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.fromString(bgColor)));
 	}
 }
