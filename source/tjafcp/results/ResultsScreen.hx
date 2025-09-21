@@ -14,7 +14,10 @@ class ResultsScreen extends FlxState
 		super();
 
 		if (stats == null)
+		{
+			trace('Null ResultsStats');
 			stats = new ResultsStats(0, 0);
+		}
 
 		score = new ResultsScore(stats.good, stats.total);
 		characterManager = new ResultsCharacter(character);
