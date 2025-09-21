@@ -3,6 +3,7 @@ package tjafcp.results;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxState;
+import flixel.group.FlxSpriteGroup;
 import flixel.util.FlxColor;
 import haxe.macro.Compiler;
 import tjafcp.results.ResultsCharacter.ResultsCharacterID;
@@ -40,5 +41,27 @@ class ResultsScreen extends FlxState
 		}
 
 		add(new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.fromString(bgColor)));
+
+		numbers = new FlxSpriteGroup();
+		add(numbers);
+
+		for (i in 0...3)
+		{
+			var number = new ResultsFont();
+			number.animation.play('num 0');
+
+			number.screenCenter();
+			number.ID = i;
+
+			if (i == 0)
+				number.x -= number.width + 16;
+
+			if (i == 2)
+				number.x += number.width + 16;
+
+			numbers.add(number);
+		}
 	}
+
+	public var numbers:FlxSpriteGroup;
 }
