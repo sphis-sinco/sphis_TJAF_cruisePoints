@@ -48,6 +48,8 @@ class ResultsScreen extends FlxState
 		for (i in 0...3)
 		{
 			var number = new ResultsFont();
+			number.scale.set(.5, .5);
+			number.updateHitbox();
 			number.animation.play('0');
 
 			number.screenCenter();
