@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="font-numbers.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="num 00000" x="4" y="4" width="207" height="337"/>
+	<SubTexture name="num 10000" x="219" y="4" width="213" height="262"/>
+	<SubTexture name="num 20000" x="440" y="4" width="201" height="249"/>
+	<SubTexture name="num 30000" x="649" y="4" width="164" height="242"/>
+	<SubTexture name="num 40000" x="821" y="4" width="189" height="251"/>
+	<SubTexture name="num 50000" x="4" y="349" width="186" height="257"/>
+	<SubTexture name="num 60000" x="198" y="349" width="217" height="274"/>
+	<SubTexture name="num 70000" x="423" y="349" width="201" height="255"/>
+	<SubTexture name="num 80000" x="632" y="349" width="237" height="288"/>
+	<SubTexture name="num 90000" x="4" y="645" width="229" height="325"/>
+</TextureAtlas>
